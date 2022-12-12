@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: rgb(15, 13, 13);
+    height: 6rem;
+    /* z-index: -1; */
+    /* background-color: rgba(31, 30, 0, 0.24); */
+    /* transition: .5s ease white; */
+}
+#navbar img{
+    width: 5rem;
+    height: 6rem;
+}
+.collapse{
+    display: flex;
+    align-items: center;
+    /* justify-content: center;s */
+}
+nav ul{
+    display: flex;
+    margin: 0px 60rem;
+    list-style: none;
+}
+nav ul li{
+    color: wheat;
+    margin: 0px 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(250, 246, 240);
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Anton', sans-serif;
+}
+
+
+
+/* hero section  */
+#hero{
+    background-image: url(./img/asian.jpg);
+     background-size: cover;
+    /* background-position: center; */
+    background-position: initial;
+    position: relative; 
+    z-index: 1;
+    height: 87vh;
+    top: 0;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+    z-index: -1;
+}
+.text h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 32vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 33px;
+
+    /* align-items: center; */
+}
+.text h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+
+    /* padding-top: 42vh; */
+
+}
+.hero .btn {
+    display: flex;
+    margin-left: 45%;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(214, 62, 62);
+    padding: 10px 25px;
+    justify-content: center;
+    color: wheat;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.hero a {
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.hero .btn:hover{
+    background-color: rgb(63, 44, 44);
+}
+
+
+
+/* service section  */
+
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+    /* background-color: rgb(212, 192, 192); */
+}
+#services .service-top{
+    width: 500px;
+    margin: 0 auto;
+}
+#services .section-title{
+    font-size: 4rem;
+    font-weight: 300px;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+#services .section-title span{
+    color: red;
+}
+.part{
+    display: flex;
+    width: 90%;
+}
+.image img{
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+}
+.image .first{
+    display: flex;
+    /* flex-direction: row; */
+    width: 250px;
+}
+.image .second{
+    display: flex;
+    margin: 20px 2px;
+    width: 250px;
+}
+.part{
+    display: flex;
+}
+.part p{
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+ h3{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* padding-left: 50px; */
+}
+
+
+/* menu section  */
+
+#order{
+    background-color: rgb(191, 174, 207);
+    width: 100%;
+    height: 100vh;
+
+}
+#order .menu{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#order .menu-list{
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+#order .menu-list img{
+    
+    margin: 5px 20px;
+}
+#order .menu-list h1{
+    margin: 5px 70px;
+
+}
+.menu-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: chartreuse;
+    width: 70%;
+    margin-left: 292px;
+}
+.menu-bar h1{
+    font-size: 30px;
+    padding: 10px 0px;
+}
+.rate{
+    margin-left: 60px;
+}
+
+#notice{
+    background-color: chocolate;
+    height: 60vh;
+    width: 100%;
+}
+.notice-section{
+    display: flex;
+    justify-content: space-around;
+}
+.promo img{
+    padding: 50px 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.notice{
+    background-color: rgb(216, 173, 173);
+    margin-top: 60px;
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+}
+.container{
+    /* display: flex; */
+    margin: 0px 40px;
+}
+.container h4{
+    display: flex;
+    justify-content: center;
+}
+.container .font{
+     font-size: 50px;
+     padding: 30px 40px;
+}
+.container .flex{
+    display: flex;
+    flex-direction: column;
+}
+.notice-flex{
+    display: flex;
+}
+.notice-flex h1{
+    margin-left: 25px;
+}
+.flex h3{
+    margin: 0px 15px 0px 0px;
+    font-size: 18px;
+}
+.flex2 h3{
+    font-size: 18px;
+}
+.mobile{
+    display: flex;
+    /* justify-content: center; */
+    padding: 15px 50px;
+    margin: 200px 50px;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 1px;
+    /* justify-content: space-between; */
+}
+
+/* reciped section  */
+#reciped{
+    background-color: rgb(152, 196, 197);
+    height: 50vh;
+}
+.recipt{
+    padding: 100px 5px;
+}
+.recipt h1{
+    display: flex;
+    font-size: 35px;
+    padding: 30px 45px;
+    font-weight: bolder;
+    margin-left: 100px;
+}
+.recipt-btn{
+    padding: 25px 25px;
+    margin-left: 160px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* today section  */
+#today{
+    /* display: flex; */
+    background-color: palevioletred;
+    margin: auto;
+    height: 70vh;
+    width: 70%;
+    justify-content: center;
+}
+.all-menu{
+    padding: 10px 25px;
+}
+.all-menu h5{
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.all-menu h1{
+    font-size: 35px;
+    padding: 10px 25px;
+}
+.box-disc{
+    display: flex;
+    justify-content: space-around;
+}
+.box img{
+    margin: 5px 10px;
+}
+.box h1{
+    margin: 5px 10px;
+}
+.box-place{
+    background-color: white;
+    height: 20vh;
+    width: 20%;
+    margin: 10px 5px;
+    border-radius: 8px;
+}
+.box-place2{
+    background-color: white;
+    height: 20vh;
+    width: 20%;
+    border-radius: 8px;
+    margin: 10px 5px;
+}
+.box-place3{
+    background-color: white;
+    height: 20vh;
+    width: 20%;
+    border-radius: 8px;
+    margin: 10px 5px;
+
+}
+.box img{
+    width: 100px;
+    height: 100px;
+
+}
+
+/* foodies section  */
+#foodies{
+    height: 50vh;
+    background-color: rgb(177, 144, 144);
+}
+.cont{
+    padding-top: 50px;
+}
+.con{
+    width: 50%;
+    background-color: rgb(216, 173, 173);
+    margin:  auto;
+    padding: 50px 0px;
+}
+.con h1{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    padding-top: 50px;
+    
+}
+.con p{
+    margin: 20px 50px;
+
+}
+
+#our-recipt{
+    height: 100vh;
+    background-color: rgb(150, 199, 171);
+    width: 85%;
+    justify-content: center;
+    margin: auto;
+}
+.our-detail{
+    /* display: inline-block; */
+   background-color: sienna;
+   padding: 50px 100px;
+}
+.img-sec img{
+    margin: 40px 40px;
+    height: 250px;
+    width: 350px;
+    justify-content: space-around;
+}
+.our-lis{
+    /* padding: 0px 60px; */
+    display: flex;
+    /* width: 1500px; */
+}
+.our-list-sec{
+    /* background-color: skyblue; */
+    height: 200px;
+    width: 100%;
+    margin: 5px 30px;
+}
+
+#footer{
+    background-color: rgb(235, 209, 209);
+    height: 80vh;
+    
+}
+.four{
+    display: flex;
+    padding: 200px 80px;
+}
+.list-all p{
+    width: 350px;
+}
+.copy-right{
+    background-color: black;
+    height: 100px;
+}
+.copy{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+
+
+
